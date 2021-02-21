@@ -1,11 +1,15 @@
-# Trajectory-Calculator
-For calculating in atmosphere projectile firing simulation.
+# Trajectory Calculator
+This simulation calculates the trajectory of an object while travelling in atmosphere and includes both atmospheric drag and lateral forces.
 
-For calculation variables;
-  Current air Temperature: Wanted atmospheric temperature for air resistance calculations.
-  Initial Speed: The speed which projectile is fired.
-  Degree of Shot: The angle between the ground and trajectory. (In degrees*)
-  Time Interval: Changable time interval for equations. Recomended value is minimum 0.01 (Smaller the value, higher the the accuracy will be)
-  Height of the Shot: The vertical distance between the ground zero and the projectiles position at t=0
-  
- This code can also calculate for lateral forces. For active lateral force just remove the comment status of the function at line 107.
+## Inputs
+-current air temperature
+-initial speed of the object
+-degree of the shot relative to the ground
+-time interval  (recomended value = 0.001 (lower value yields more accurate results but increases the time of calculation))
+-hight of the starting point relative to the ground zero
+
+## Output
+The output can be changed in the line 102 to show desired parameters.
+
+### Additional
+To add lateral forces to the calculation remove the comment status of the line 107.
