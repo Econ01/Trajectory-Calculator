@@ -1,17 +1,25 @@
-[![MasterHead](/Data_Samples/T=14,v=30,deg=10,h=0.png)]
+![MasterHead](/Data_Samples/T=14,v=30,deg=10,h=0.png)
 
 # Trajectory Calculator
-This simulation calculates the trajectory of an object while travelling in atmosphere and includes both atmospheric drag and lateral forces.
+This simulation calculates the trajectory of an object while travelling in atmosphere and includes both atmospheric drag and lateral forces. Since the code is old, there is not much to help user. Therefore, to be able to see lateral forces and edit atmospheric values code has to be editted.
+
+Every input and variable hardcoded to the simulation does serve a purpose.
 
 ## Inputs
-- current air temperature
-- initial speed of the object
+- current air temperature in Celcius
+- initial speed of the object in m/s
 - degree of the shot relative to the ground
-- time interval  (recomended value = 0.001 (lower value yields more accurate results but increases the time of calculation))
+- time interval (lower value yields more accurate results but increases the time of calculation)
 - hight of the starting point relative to the ground zero
 
 ## Output
-The output can be changed in the line 102 to show desired parameters.
+Program outputs a .png file to the same directory where it has been run.
 
-### Additional
-To add lateral forces to the calculation remove the comment status of the line 107.
+### Sample Outputs
+
+<img align="right" alt="Coding" width="400" src="/Data_Samples/T=0,v=40,deg=45,h=50.png">
+<img align="left" alt="Coding" width="400" src="/Data_Samples/T=100,v=300,deg=68,h=0.png">
+
+
+### Important
+This an old project of my therefore no further developments will be made.
