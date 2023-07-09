@@ -20,7 +20,7 @@ Program outputs a .png file to the same directory where it has been run.
 <img align="right" alt="sample_1" width="400" src="/Data_Samples/T=0,v=40,deg=45,h=50.png">
 <img align="left" alt="sample_2" width="400" src="/Data_Samples/T=100,v=300,deg=68,h=0.png">
 
- <div class="row">
+<div class="row">
   <div class="column">
     <img src="/Data_Samples/T=0,v=40,deg=45,h=50.png" alt="Snow" style="width:50%">
   </div>
