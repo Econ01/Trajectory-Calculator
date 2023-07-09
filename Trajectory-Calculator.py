@@ -24,7 +24,7 @@ t_zero_final =float
 h_max = float
 
 def setup():
-    global dt,h,t_zero
+    global dt,h,t_zero,v,deg
     print("current air temperature ground zero (C):")
     t_zero = float(input())
     print("initial speed (m/s):")
@@ -94,7 +94,8 @@ def graph():
     plt.xlabel('Range')
     plt.title('Trajectory')
     plt.plot(x,y)
-    plt.savefig("trajectory.png" ,dpi=800)
+    print(t_zero,v,deg,h)
+    plt.savefig("T={:.1f},v={:.2f},deg={:.2f},h={:.1f}.png".format(t_zero,v,deg,h) ,dpi=800)
     plt.show()
 
 setup()
