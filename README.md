@@ -22,10 +22,10 @@ Program outputs a .png file to the same directory where it has been run.
 
  <div class="row">
   <div class="column">
-    <img src="/Data_Samples/T=0,v=40,deg=45,h=50.png" alt="Snow" style="width:100%">
+    <img src="/Data_Samples/T=0,v=40,deg=45,h=50.png" alt="Snow" style="width:50%">
   </div>
   <div class="column">
-    <img src="/Data_Samples/T=100,v=300,deg=68,h=0.png" alt="Forest" style="width:100%">
+    <img src="/Data_Samples/T=100,v=300,deg=68,h=0.png" alt="Forest" style="width:50%">
   </div>
 </div> 
 
