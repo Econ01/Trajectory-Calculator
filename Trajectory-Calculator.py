@@ -4,17 +4,11 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 fig = plt.figure()
 ax = fig.add_subplot(1,1,1)
-time = []
-xs = []
-ys = []
-x = []
-y = []
-z = []
-vx = []
-vy = []
-vz = []
+time = [] ;xs = [] ;ys = []
+x = []; y = []; z = [] #Position values
+vx = []; vy = []; vz = [] #Velicoty values
 Q = []
-h_max = float
+h_max = float #Max Height
 v = float
 deg = float
 dt = float
@@ -31,9 +25,9 @@ h_max = float
 
 def setup():
     global dt,h,t_zero
-    print("current air temperature ground zero:")
+    print("current air temperature ground zero (C):")
     t_zero = float(input())
-    print("initial speed:")
+    print("initial speed (m/s):")
     v = float(input())
     print("degree of the shot:")
     deg = float(input())
@@ -41,9 +35,9 @@ def setup():
         print("Degree value of the shot must be between 90-0")
         sys.exit()
     deg_rad = math.radians(deg)
-    print("time interval:")
+    print("time interval (s):")
     dt = float(input())
-    print("Hight of shot:")
+    print("Hight of shot (m):")
     h = float(input())
     y.insert(0,h)
     x.insert(0,0.0)
@@ -98,11 +92,12 @@ def lateral():
 def graph():
     plt.ylabel('Height')
     plt.xlabel('Range')
-    plt.title('Trajactory')
+    plt.title('Trajectory')
     plt.plot(x,y)
+    plt.savefig("trajectory.png" ,dpi=800)
     plt.show()
 
 setup()
 calculate()
-#lateral()
+lateral()
 graph()
