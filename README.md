@@ -1,3 +1,5 @@
+[![MasterHead](/Data_Samples/T=14,v=30,deg=10,h=0.png)]
+
 # Trajectory Calculator
 This simulation calculates the trajectory of an object while travelling in atmosphere and includes both atmospheric drag and lateral forces.
 
